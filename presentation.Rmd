@@ -1,0 +1,32 @@
+---
+title: "Shiny Application"
+subtitle: "Car rental app"
+date: "November 4th 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Assignment
+
+This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+## Shiny application
+
+Created application can serve as a useful tool for customers in rental cars companies, since it enables them to select a car based upon their budget, distance they plan to travel and if needed, adjust the selection by the price of petrol and preference on a gearbox.
+
+To access the application please click on below indicated link:
+<https://peter202020.shinyapps.io/coursera/>
+
+All the instrutions how to use the app are indicated in the "help" tab.
+
+## UI.R
+The first component of the shiny application is ui.R file. This file serves as a set of input parameters user is entering in order to get the outcome, which is also thanks to this file being displayed on the application. 
+
+## server.R
+The second component of the shiny application is the server.R file. This one is needed in order to promptly perform all the necessary calculations based on data input coming from the ui.R file. As the customer is adjusting the user interface, this file is preparing output to be displayed on the layout. This is also a file which does a conversion of "miles per gallon" to "kilometers per liter" as this information is not a part of the `mtcars` dataset.
+
+
+
